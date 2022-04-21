@@ -17,7 +17,7 @@ docker build -t tools .
 ### docker
 
 ```bash
-docker docker run -itd xlovepython/tools
+docker run -itd xlovepython/tools
 ```
 
 ### k8s
