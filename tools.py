@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    with open('Dockerfile','r') as f:
+    with open('tools/Dockerfile','r') as f:
         for line in f:
             if "dnf install" in line:
                 toolslist = line.split(' ')
@@ -15,7 +15,7 @@ def index():
 
     meta_python3 = "\n\n\n2、python3.8的第三方库如下：\n"
     pip_list = []
-    with open('requirements.txt','r') as f:
+    with open('tools/requirements.txt','r') as f:
         for line in f:
             pip_list.append(line)
     str_tools = str_tools + meta_python3 + ''.join(pip_list)
