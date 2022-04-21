@@ -36,4 +36,30 @@ docker run -itd xlovepython/tools
 ```bash
 kubectl create -f tools.yaml
 ```
+## web验证
 
+```bash
+docker exec -it b9ec36751f97 curl 127.0.0.1
+```
+
+结果类似如下：
+
+```bash
+1、已经安装的工具列表如下：
+python38
+which
+vim
+net-tools
+bind-utils
+mysql
+redis
+tcpdump
+wget
+
+
+2、python3.8的第三方库如下：
+mysql-connector-python==8.0.28
+requests==2.26.0
+Flask==2.1.1
+pyignite==0.5.2
+```
