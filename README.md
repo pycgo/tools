@@ -7,12 +7,19 @@
 
 ## 支持列表
 
-- [x] mysql
-- [x] redis-cli
+## 支持列表
+
+✅mysql
+
+✅redis-cli
+
+✅Python3
+
+- [ ] Node
 - [ ] kafka
 - [ ] elasticsearch
 - [ ] rabbitmq
-- [ ] HDFS
+- [ ] Hdfs
 - [ ]  And etc....
 
 ## 开发
