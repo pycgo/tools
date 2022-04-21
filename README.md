@@ -17,6 +17,9 @@ docker build -t tools .
 ### docker
 
 ```bash
+#本地自己编译的
+docker run -itd tools
+#用已经在docker hub编译好的
 docker run -itd xlovepython/tools
 ```
 
