@@ -9,13 +9,11 @@
 ## 支持列表及未来计划
 
 ✅mysql
-
 ✅redis-cli
-
 ✅Python3
+✅Kafka
 
 - [ ] Node
-- [ ] kafka
 - [ ] elasticsearch
 - [ ] rabbitmq
 - [ ] Hdfs
