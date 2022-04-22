@@ -4,7 +4,7 @@ outfile = open("delete.txt",'w')
 databases = ['dv','library']
 for database in databases:
 
-    cnx = mysql.connector.connect(user='root', password='Sjtu403c@#%',
+    cnx = mysql.connector.connect(user='root', password='123456',
                    host='172.16.86.128',
                    database=database)
 
