@@ -37,9 +37,9 @@ docker build -t tools .
 
 ```bash
 #本地自己编译的
-docker run -itd tools
+docker run -itd --name tools tools
 #用已经在docker hub编译好的
-docker run -itd xlovepython/tools
+docker run -itd --name tools xlovepython/tools
 ```
 
 ### k8s
@@ -58,7 +58,7 @@ kubectl create -f tools.yaml
 ## web验证
 
 ```bash
-docker exec -it b9ec36751f97 curl 127.0.0.1
+docker exec -it tools curl 127.0.0.1
 ```
 
 结果类似如下：
