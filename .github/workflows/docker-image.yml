@@ -23,7 +23,7 @@ jobs:
       run: docker build . --file Dockerfile --tag xlovepython/tools:$(date +%s)
       
     - name: login docker hub
-      run: docker login -u xlovepython -p ${{ secrets.credential }}
+      run: docker login -u xlovepython -p ${{ secrets.CREDENTIAL }}
       
     - name: Push the Docker image
       run: docker push  xlovepython/tools:$(date +%s)
