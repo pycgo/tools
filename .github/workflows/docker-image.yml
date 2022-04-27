@@ -1,11 +1,15 @@
 name: Docker Image CI
 
 on:
+
+  #是否展示手动点击按钮
   workflow_dispatch:
+  # push 自动触发
 #   push:
 #     branches: [ master ]
 #   pull_request:
 #     branches: [ master ]
+  #定时执行
 #   schedule:
 #     - cron: 15 1 * * *
 
