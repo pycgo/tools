@@ -19,7 +19,6 @@
 - [ ] Node
 - [ ] elasticsearch
 - [ ] rabbitmq
-- [ ] Hdfs
 - [ ]  And etc....
 
 ## 开发
