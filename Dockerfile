@@ -1,5 +1,4 @@
 FROM rockylinux:8.5
-WORKDIR /opt/tools
 WORKDIR /opt/
 RUN dnf install python38 which vim net-tools bind-utils mysql redis tcpdump wget bzip2 java-1.8.0-openjdk* -y  && \
     dnf clean all
