@@ -5,6 +5,9 @@
 在linux中安装常用的运维工具，如python38 which vim net-tools bind-utils mysql redis tcpdump wget
 可以方便在容器环境使用 dig mysql redis-cli 等命令
 
+ps：
+   镜像会随着工具的增多越来越大，请需要的自行裁剪Dockerfile
+
 
 ## 支持列表及未来计划
    绿色是已经支持的，未来的不一定会支持，看工作需要
