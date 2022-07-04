@@ -13,6 +13,8 @@
 
 ✅redis-cli
 
+✅kafka-client
+
 ✅Python3
 
 ✅vim
