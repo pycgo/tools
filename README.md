@@ -15,7 +15,13 @@
 
 ✅Python3
 
-✅Kafka
+✅vim
+
+✅tcpdump
+
+✅wget
+
+✅dig
 
 - [ ] Node
 - [ ] elasticsearch
