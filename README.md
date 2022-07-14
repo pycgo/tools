@@ -28,7 +28,9 @@ ps：
 
 ✅dig
 
-- [ ] Node
+✅zookeeper
+
+
 - [ ] elasticsearch
 - [ ] rabbitmq
 - [ ]  And etc....
@@ -59,11 +61,13 @@ docker run -itd --name tools xlovepython/tools
 #### 命令方式
 
 国外：
+镜像手动action 不一定最新
 ```bash
  kubectl create deployment tools --image=xlovepython/tools --port=80
 ```
 
 国内
+镜像由阿里云自动触发构建，一直是最新
 ```bash
  kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops --port=80
 ```
