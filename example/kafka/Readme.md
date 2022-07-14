@@ -8,10 +8,16 @@
 /opt/kafka-3.1.0/bin/kafka-topics.sh --bootstrap-server 192.168.11.11:9092 --list
 ```
 
-查看消费组
+查看消费组列表
 ```bash
 /opt/kafka-3.1.0/bin/kafka-consumer-groups.sh --bootstrap-server 192.168.11.11:909 --list
 ```
+
+查看消费组具体消费情况
+```bash
+/opt/kafka-3.1.0/bin/kafka-consumer-groups.sh --bootstrap-server 192.168.11.11:909 --describe --group xxx
+```
+
 
 其他命令参考kafka
 
