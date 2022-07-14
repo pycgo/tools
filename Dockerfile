@@ -2,7 +2,7 @@ FROM rockylinux:8.5
 WORKDIR /opt/
 RUN dnf install python38 which vim net-tools bind-utils mysql redis tcpdump wget bzip2 java-1.8.0-openjdk* -y  && \
     dnf clean all
-RUN echo "alias ll='ls -la'" >> /root/.bashrc && source /root/.bashrc
+RUN echo "alias ll='ls -la'" >> /root/.bashrc && source /root/.bashrc && mkdir -p /opt/tools
 COPY requirements.txt tools
 COPY tools.py tools
 COPY Dockerfile tools
