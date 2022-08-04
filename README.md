@@ -1,4 +1,4 @@
-# 基于Rockylinux 8.5   运维工具tools
+# 基于almalinux:9.0   运维工具tools
 
 介绍：
 
