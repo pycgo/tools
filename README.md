@@ -2,7 +2,7 @@
 
 介绍：
 
-在linux中安装常用的运维工具，如python38 which vim net-tools bind-utils mysql redis tcpdump wget
+在linux中安装常用的运维工具，如python39 which vim net-tools bind-utils mysql redis tcpdump wget
 可以方便在容器环境使用 dig mysql redis-cli 等命令
 
 ps：
