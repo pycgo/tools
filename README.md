@@ -1,26 +1,15 @@
-# 基于almalinux:9.0   运维工具tools
+# 基于almalinux:9.0   运维工具tools:dig
+子镜像
 
 介绍：
 
-在linux中安装常用的运维工具，如python39 which vim net-tools bind-utils mysql redis tcpdump wget
-可以方便在容器环境使用 dig mysql redis-cli 等命令
+在linux中安装常用的运维工具，如python39  net-tools bind-utils tcpdump wget
+可以方便在容器环境使用 dig  等命令
 
-ps：
-   镜像会随着工具的增多越来越大，请需要的自行裁剪Dockerfile
 
 
 ## 支持列表及未来计划
    绿色是已经支持的，未来的不一定会支持，看工作需要
-
-✅mysql
-
-✅redis-cli
-
-✅kafka-client
-
-✅Python3
-
-✅vim
 
 ✅tcpdump
 
@@ -28,12 +17,6 @@ ps：
 
 ✅dig
 
-✅zookeeper
-
-
-- [ ] elasticsearch
-- [ ] rabbitmq
-- [ ]  And etc....
 
 ## 开发
 
@@ -60,16 +43,11 @@ docker run -itd --name tools xlovepython/tools
 
 #### 命令方式
 
-国外：
-镜像手动action 不一定最新
-```bash
- kubectl create deployment tools --image=xlovepython/tools --port=80
-```
 
 国内
 镜像由阿里云自动触发构建，一直是最新
 ```bash
- kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops --port=80
+ kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops:dig --port=80
 ```
 
 #### yaml方式
