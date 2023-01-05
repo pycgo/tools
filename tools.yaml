@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: tools
-  name: tools
+    app: tools-dig
+  name: tools-dig
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tools
+      app: tools-dig
   template:
     metadata:
       labels:
-        app: tools
+        app: tools-dig
     spec:
       containers:
-      - image: xlovepython/tools
+      - image: registry.aliyuncs.com/opsflow/ops:dig
         imagePullPolicy: Always
-        name: tools
+        name: tools-dig
         ports:
         - containerPort: 80
           protocol: TCP
