@@ -1,9 +1,10 @@
 # 基于almalinux:9.0   运维工具tools
 
 介绍：
+主要为pyignite准备的镜像
 
-在linux中安装常用的运维工具，如python39 which vim net-tools bind-utils mysql redis tcpdump wget
-可以方便在容器环境使用 dig mysql redis-cli 等命令
+在linux中安装常用的运维工具，如python39 which vim net-tools bind-utils
+
 
 ps：
    镜像会随着工具的增多越来越大，请需要的自行裁剪Dockerfile
@@ -12,28 +13,16 @@ ps：
 ## 支持列表及未来计划
    绿色是已经支持的，未来的不一定会支持，看工作需要
 
-✅mysql
-
-✅redis-cli
-
-✅kafka-client
 
 ✅Python3
 
 ✅vim
 
-✅tcpdump
-
-✅wget
-
 ✅dig
 
-✅zookeeper
+✅ignite
 
 
-- [ ] elasticsearch
-- [ ] rabbitmq
-- [ ]  And etc....
 
 ## 开发
 
@@ -60,23 +49,15 @@ docker run -itd --name tools xlovepython/tools
 
 #### 命令方式
 
-国外：
-镜像手动action 不一定最新
-```bash
- kubectl create deployment tools --image=xlovepython/tools --port=80
-```
 
-国内
+
+
 镜像由阿里云自动触发构建，一直是最新
 ```bash
- kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops --port=80
+ kubectl create deployment tools-ignite --image=registry.aliyuncs.com/opsflow/ops:ignite
 ```
 
-#### yaml方式
 
-```bash
-kubectl create -f tools.yaml
-```
 ## web验证
 
 ```bash
@@ -92,15 +73,10 @@ which
 vim
 net-tools
 bind-utils
-mysql
-redis
-tcpdump
-wget
+
 
 
 2、python3.8的第三方库如下：
-mysql-connector-python==8.0.28
 requests==2.26.0
-Flask==2.1.1
 pyignite==0.5.2
 ```
