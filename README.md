@@ -72,6 +72,12 @@ docker run -itd --name tools xlovepython/tools
  kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops --port=80
 ```
 
+mini版本
+ --- 去掉了ignite zk kafka
+```bash
+ kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops:mini --port=80
+```
+
 #### yaml方式
 
 ```bash
