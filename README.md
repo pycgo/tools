@@ -3,7 +3,7 @@
 
 介绍：
 
-在linux中安装常用的运维工具，如python39  net-tools bind-utils tcpdump wget
+在linux中安装常用的运维工具，如python39  net-tools bind-utils tcpdump wget mysql redis
 可以方便在容器环境使用 dig  等命令
 
 
@@ -16,6 +16,10 @@
 ✅wget
 
 ✅dig
+
+✅mysql
+
+✅redis
 
 
 ## 开发
