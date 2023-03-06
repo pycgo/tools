@@ -1,4 +1,4 @@
-# 基于almalinux:9.0   运维工具tools:dig
+# 基于almalinux:9.0   运维工具tools mini版（包含少量常用的包）
 子镜像
 
 介绍：
