@@ -1,4 +1,4 @@
-# 基于almalinux:9.0   运维工具tools
+# 基于almalinux:9.0   运维工具tools  zk
 
 介绍：
 
@@ -15,8 +15,6 @@ ps：
 ✅mysql
 
 ✅redis-cli
-
-✅kafka-client
 
 ✅Python3
 
@@ -69,13 +67,13 @@ docker run -itd --name tools xlovepython/tools
 国内
 镜像由阿里云自动触发构建，一直是最新
 ```bash
- kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops --port=80
+ kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops:zk --port=80
 ```
 
-mini版本
+zk版本
  --- 去掉了ignite zk kafka
 ```bash
- kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops:mini --port=80
+ kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops:zk --port=80
 ```
 
 #### yaml方式
