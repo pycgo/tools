@@ -10,3 +10,5 @@
 
 
 其他命令参考zookeeper
+
+/opt/apache-zookeeper-3.8.0-bin/bin/zkCli.sh -server zookeeper:2181 set /test/config "`cat /opt/apache-zookeeper-3.8.0/conf/zoo_sample.cfg`"
