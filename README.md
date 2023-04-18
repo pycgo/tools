@@ -51,7 +51,7 @@ docker run -itd --name tools xlovepython/tools
 国内
 镜像由阿里云自动触发构建，一直是最新
 ```bash
- kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops:dig --port=80
+ kubectl create deployment tools --image=registry.aliyuncs.com/opsflow/ops:mini --port=80
 ```
 
 #### yaml方式
