@@ -1,10 +1,6 @@
 FROM almalinux:9.2
 WORKDIR /opt/
-RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-      -e 's|^# baseurl=https://repo.almalinux.org|baseurl=https://mirrors.aliyun.com|g' \
-      -i.bak \
-      /etc/yum.repos.d/almalinux*.repo && dnf makecache && \
-    dnf install which vim net-tools bind-utils mysql redis tcpdump wget bzip2 python-devel openssh-clients -y  && \
+RUN dnf install which vim net-tools bind-utils mysql redis tcpdump wget bzip2 python-devel openssh-clients -y  && \
     dnf clean all
 RUN echo "alias ll='ls -la'" >> /root/.bashrc && source /root/.bashrc && mkdir -p /opt/tools \
     && wget -O /usr/local/kubectl "file.leadswarp.com/kubectl" && chmod +x /usr/local/kubectl \
