@@ -1,6 +1,6 @@
 FROM almalinux:9.2
 WORKDIR /opt/
-RUN dnf install  epel-release -y && dnf install which vim net-tools bind-utils mysql redis tcpdump wget bzip2 python-devel openssh-clients screen bash-completion -y  && \
+RUN dnf install  epel-release -y && dnf install which vim net-tools procps-ng bind-utils mysql redis tcpdump wget bzip2 python-devel openssh-clients screen bash-completion -y  && \
     dnf clean all && \
     echo "alias ll='ls -la'" >> /root/.bashrc && source /root/.bashrc && mkdir -p /opt/tools \
     && wget -O /usr/local/bin/kubectl "file.leadswarp.com/kubectl" && chmod +x /usr/local/bin/kubectl \
