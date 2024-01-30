@@ -1,4 +1,4 @@
-# 基于almalinux:9.0   运维工具tools
+# 基于almalinux:9.x   运维工具tools
 
 介绍：
 
