@@ -1,4 +1,4 @@
-FROM almalinux:9.2
+FROM almalinux:9.3
 WORKDIR /opt/
 RUN dnf install  epel-release -y && dnf install which vim net-tools procps-ng bind-utils mysql redis tcpdump wget bzip2 python-devel openssh-clients screen bash-completion -y  && \
     dnf clean all && \
